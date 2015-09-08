@@ -1,3 +1,3 @@
 # JavaAlgo
-different algorithms in Java
-Thats it
+different algorithms in Java.
+Thats it.
