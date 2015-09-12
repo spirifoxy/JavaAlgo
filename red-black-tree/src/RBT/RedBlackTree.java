@@ -1,9 +1,9 @@
-package red.black.tree;
+package RBT;
 
 /**
  *
  * @author spirifoxy
  */
 public class RedBlackTree {
-
+    
 }

@@ -1,4 +1,4 @@
-package red.black.tree;
+package RBT;
 
 /**
  *

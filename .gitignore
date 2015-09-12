@@ -10,3 +10,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/red-black-tree/nbproject/private/
+/JavaApplication8/nbproject/private/
+/red-black-tree/build/
+/JavaApplication9/nbproject/private/
