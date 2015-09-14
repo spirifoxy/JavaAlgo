@@ -35,8 +35,8 @@ public class RedBlackTree {
         root = nil;
     }
 
-    private boolean isEmpty() {
-        return root == nil;
+    public boolean isEmpty() {
+        return root.id == nil.id;
     }
     
     public Node getRoot() {
@@ -50,13 +50,15 @@ public class RedBlackTree {
 
     public void insert(Node node) {
         Node temp = root;
-        if (root == nil) {
+        if (root.id == nil.id) {
             root = node;
+            node.color = BLACK;
+            node.parent = nil;
         } else {
             node.color = RED;
             while (true) {
                 if (node.id < temp.id) {
-                    if (temp.left == nil) {
+                    if (temp.left.id == nil.id) {
                         temp.left = node;
                         node.parent = temp;
                         break;
@@ -64,7 +66,7 @@ public class RedBlackTree {
                         temp = temp.left;
                     }
                 } else if (node.id > temp.id) {
-                    if (temp.right == nil) {
+                    if (temp.right.id == nil.id) {
                         temp.right = node;
                         node.parent = temp;
                         break;
@@ -173,7 +175,7 @@ public class RedBlackTree {
 
     
     public void printTree(Node node) {
-        if (node == nil) {
+        if (node.id == nil.id) {
             return;
         }
         printTree(node.left);
