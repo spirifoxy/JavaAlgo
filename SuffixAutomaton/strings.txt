@@ -1,0 +1,2 @@
+The idea of bad character heuristic is simple. 
+The character of the text which doesnt match with the current character of pattern is called the bad character string.
